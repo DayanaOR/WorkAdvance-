@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+body {
+    background-color:#ebbebe;
+    font-family: Libre Baskerville, serif;
+    text-align: center;
+}
+
+#seleccionar-mascota {
+    display: none;
+
+}
+
+.title{
+    font-family: Libre Baskerville, serif;
+    background-color:#dbb7b7;
+    color: rgb(8, 11, 12);
+    border-radius: 11px;
+    margin-top: 10px;
+
+}
+
+.subtitulo{
+    font-size: 25px;
+}
+
+.tarjetas{
+    display: flex;
+    font-size: 15px;
+    justify-content: center;
+}
+
+.tarjeta-mokepon{
+    width:217px;
+    height: 105px;
+    display: flex;
+    border-radius: 12px;
+    background:#dbb7b7;
+    cursor: pointer;
+    padding:11px;
+    margin: 8px;
+    font-weight: bold;
+    box-sizing:border-box;
+}
+
+.tarjeta-mokepon img {
+    width: 110px;
+}
+
+button {
+    font-family: Libre Baskerville, serif;
+    background-color: #dbb7b7;
+    border-radius: 11px;
+    font-weight: bold;
+    margin-top: 15px;
+    border: none;
+    width: 100px;
+    height: 35px;
+}
+
+input{
+    display:none;
+}
+
+input:checked + label{
+    background: #efa0a0;
+}
+
+#seleccionar-ataque {
+    flex-direction: column;
+    display: flex;
+}
+
+#mensajes{
+    font-weight: 600;
+    color: #000000;
+    margin: 3px;
+}
+
+.ataques{
+    display: grid;
+    grid-template-columns: 150px 150px !important;
+    justify-content: center;
+    color: rgb(8, 11, 12);
+}
+
+.ataque-jugador, .ataque-enemigo{
+    font-family: cursive;
+}
+
+#vidas-jugador, #vidas-enemigo {
+    font-size: 32px;
+    margin-bottom: 0;
+}
+
+#ver-mapa{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#ver-mapa button{
+    margin: 10px;
+}
+
+
+@media (max-width: 800px){
+    .tarjetas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+  
+@media (max-width: 300px) {
+    #ver-mapa div {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
